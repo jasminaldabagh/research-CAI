@@ -30,13 +30,17 @@
 }
 
 h1 {
-    width: 35vw;
+    width: 40vw;
     font-size: 45px;
     justify-content: left;
     align-content: center;
     line-height: 1.2em;
     margin: 0px;
     padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 a {
@@ -132,10 +136,6 @@ section.button {
     margin-bottom: 3px;
 }
 
-  section.box h3 {
-    font-size: 20px;
-    color: black;
-  }
 
   section.box h4 {
     font-size: 16px;
@@ -148,58 +148,99 @@ section.button {
     text-align: justify;
   }
 
-.contact {
+  .contact {
     text-align: right;  
-    padding-right: 10px;  
     font-size: 14px;
-    color: rgb(202, 202, 202);
+    color: rgb(220, 220, 220); /* This color is used from the second block */
     position: fixed;
-    bottom: 0;  
-    right: 30px;          
-    margin-top: 20px; 
-    margin-bottom: 10px; 
+    bottom: 20px; /* Combines the bottom positioning */
+    right: 20px;  /* Adjusts for the final right distance */
+    transform: rotate(90deg);
+    transform-origin: bottom right; /* Pivot rotation around the bottom-right corner */
+    padding-right: 5px; /* Padding from the second block */
+    padding-top: 5px;   /* Padding from the second block */
+    margin-top: 20px;   /* This margin is kept for vertical spacing */
 }
 
-/* Media query for screens smaller than 700px */
 @media (max-width: 700px) {
     .container {
-        flex-direction: column;
-        justify-content: normal; 
-        align-items: flex-start; 
-        gap: 0px; 
-        padding: 0px; 
-        align-items: left;    
+        width: 100%; 
+        gap: 10px;
     }
 
     .left, .right {
-        max-width: 100%; 
+        max-width: 100%; /* Make both sections full width */
+        justify-content: center; 
+        padding-bottom: 0px;
     }
 
     h1 {
         width: 100%;
-        font-size: 35px;       
+        font-size: 25px;
     }
 
-    .description {
+    h2 {
         width: 100%;
-        font-size: 10px;  
+        font-size: 16px;
     }
 
+    h3 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    section.description {
+        width: 100%;
+        font-size: 10px;
+        width: auto;
+    }
+
+    .button-wrapper {
+        margin: 10px;
+    }
+
+    /* Update for the box */
     .box { 
-        width: 100%;
-        margin: 20px;
+        width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px; 
+        padding: 0px;
+    }
 
+    .logo img {
+        padding: 10px;
+        width: 50%;
+    }
+
+    section.box div {
+        padding: 0px; 
+    }
+
+    .box p {
+        font-size: 12px;
+    }
+
+    section.box ul {
+        padding: 10px 30px;
+        margin-bottom: 3px;
+      }
+
+    .box li {
+        font-size: 12px;
     }
 
     .contact {
-        text-align: left;  
-        padding-right: 10px;  
         position: fixed;
-        bottom: 0;  
-        left: 50px;          
-        margin-top: 20px; 
-        margin-bottom: 10px; 
+        bottom: 20px;
+        right: 20px;
+        padding-right: 0px;
+        transform: rotate(90deg);
+        margin-bottom: 0px;
     }
 }
-
 
