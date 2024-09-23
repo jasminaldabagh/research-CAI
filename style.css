@@ -269,3 +269,52 @@ section.button {
     }
 }
 
+/* For screens between 425px and 649px */
+@media (min-width: 424px) and (max-width: 649px) {
+    .container {
+        flex-direction: column; 
+        gap: 0px; 
+    }
+
+    .left, .right {
+        max-width: 100%; 
+        padding-right: 0;
+        margin-top: 20px; 
+    }
+
+    h1 {
+        font-size: 25px;
+        width: 100%; 
+        margin-top: 2vh; 
+    }
+
+    h2 {
+        font-size: 15px;
+        width: 80%; 
+    }
+
+    section.box {
+        width: 100%; 
+        padding: 10px; 
+        margin-left: 0px;
+    }
+
+    section.description {
+        font-size: 14px; /* Slightly larger text for readability */
+        width: 100%; /* Full width description */
+    }
+
+    section.box div {
+        font-size: 14px; /* Ensure the text remains readable */
+    }
+
+    .contact {
+        position: fixed;
+        bottom: 20px;
+        right: 14px;
+        padding-right: 0px;
+        transform: rotate(90deg);
+        margin-bottom: 0px;
+        font-size: 10px;
+    }
+}
