@@ -35,7 +35,7 @@ h1 {
     justify-content: left;
     align-content: center;
     line-height: 1.2em;
-    margin-top: 20vh;
+    margin-top: 15vh;
     padding: 20px;
 }
 
@@ -201,6 +201,7 @@ section.button {
     h1 {
         width: 100%;
         font-size: 25px;
+        margin-top: auto;
     }
 
     h2 {
